@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Ingénieur Mécatronique & Robotique</title>
+
+<!-- Style PRO — Thème Technologie / EPFL / ETHZ -->
+<style>
+    :root{
+        --primary:#0a3d62;
+        --secondary:#3c6382;
+        --accent:#38ada9;
+        --light:#f5f6fa;
+        --dark:#1e272e;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",sans-serif}
+    body{background:#f5f6fa;color:var(--dark);}
+    header{position:fixed;width:100%;top:0;background:white;box-shadow:0 2px 10px rgba(0,0,0,0.1);z-index:1000;}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;}
+    .logo{font-size:1.7rem;font-weight:700;color:var(--primary);} .logo span{color:var(--accent);}    
+    .nav-links{display:flex;gap:25px;list-style:none;} .nav-links a{text-decoration:none;color:var(--dark);font-weight:500;}    
+    .hero{padding:180px 0 120px;background:url('https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg') center/cover no-repeat;color:white;text-align:center;}
+    .hero h1{font-size:3.2rem;margin-bottom:20px;} .hero p{font-size:1.3rem;max-width:700px;margin:auto;}
+    .btn{padding:12px 28px;border:none;border-radius:5px;background:var(--accent);color:white;text-decoration:none;font-weight:600;transition:.3s;}
+    .btn:hover{background:#079992;transform:scale(1.05);}    
+    section{padding:100px 40px;} h2{text-align:center;font-size:2.5rem;margin-bottom:50px;color:var(--primary);}    
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:40px;}    
+    .about img{width:100%;border-radius:10px;box-shadow:0 10px 20px rgba(0,0,0,0.15);}    
+    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;} .skill-tag{background:white;padding:8px 15px;border-radius:20px;box-shadow:0 2px 5px rgba(0,0,0,0.1);}    
+    .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:30px;}    
+    .project-card{background:white;border-radius:10px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,0.1);transition:.3s;} .project-card:hover{transform:translateY(-10px);}    
+    .project-card img{width:100%;height:220px;object-fit:cover;}    
+    .timeline{max-width:900px;margin:auto;border-left:3px solid var(--accent);padding-left:40px;}    
+    .timeline-item{margin-bottom:40px;} .timeline-item h3{color:var(--primary);} .timeline-date{background:var(--accent);color:white;padding:5px 12px;border-radius:5px;}    
+    footer{background:var(--primary);color:white;padding:50px 30px;text-align:center;}
+</style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Ingénieur <span>Mécatronique</span></div>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="accueil" class="hero">
+    <h1>Ingénieur Mécatronique & Robotique</h1>
+    <p>Conception de solutions intelligentes : robotique, IA, vision 3D, automatisation avancée.</p>
+    <div style="margin-top:25px;">
+        <a href="#projets" class="btn">Voir mes projets</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="apropos">
+<h2>À Propos de Moi</h2>
+<div class="about">
+    <div>
+        <p>Ingénieur spécialisé en robotique, mécatronique et IA appliquée, je conçois des systèmes autonomes combinant mécanique de précision, électronique avancée et algorithmique moderne.</p>
+        <p>Mon expertise inclut la vision 3D, le deep learning, les robots manipulateurs, la robotique mobile et les systèmes embarqués. Je développe des solutions robotiques destinées à l’industrie 4.0, l’automatisation intelligente et l’assistance avancée.</p>
+        <h3>Compétences Techniques</h3>
+        <div class="skills">
+            <span class="skill-tag">Robotique industrielle</span>
+            <span class="skill-tag">Vision 3D / IA</span>
+            <span class="skill-tag">Systèmes embarqués</span>
+            <span class="skill-tag">ROS / ROS2</span>
+            <span class="skill-tag">Python / C++</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">CAO (SolidWorks)</span>
+            <span class="skill-tag">LiDAR / SLAM</span>
+        </div>
+    </div>
+    <div>
+        <img src="https://images.pexels.com/photos/3912981/pexels-photo-3912981.jpeg" alt="robot image">
+    </div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projets">
+<h2>Projets</h2>
+<div class="projects-grid">
+    <div class="project-card">
+        <img src="https://images.pexels.com/photos/8439091/pexels-photo-8439091.jpeg" alt="Cobot UR3">
+        <div class="project-content">
+            <h3>Robot Manipulateur Intelligent – Pick & Place 2.0</h3>
+            <p>Système complet de manipulation autonome utilisant vision 3D, IA et planification de trajectoire pour saisir des objets inconnus.</p>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <img src="https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg" alt="Robot Mobile">
+        <div class="project-content">
+            <h3>Robot Mobile Autonome</h3>
+            <p>Navigation SLAM, évitement d’obstacles et IA embarquée pour robot à roues en environnement industriel.</p>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <img src="https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg" alt="IA industrielle">
+        <div class="project-content">
+            <h3>Inspection Industrielle par Vision IA</h3>
+            <p>Détection automatique de défauts sur chaîne de production grâce au deep learning et caméras haute précision.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<h2>Expérience</h2>
+<div class="timeline">
+
+    <div class="timeline-item">
+        <span class="timeline-date">2023 – Présent</span>
+        <h3>Ingénieur en Mécatronique & Robotique</h3>
+        <p>Conception de cellules robotisées, programmation de cobots, vision 3D, IA embarquée et optimisation de processus industriels.</p>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">2018 – 2023</span>
+        <h3>Ingénieur systèmes automatisés – Industrie</h3>
+        <p>Développement de systèmes de contrôle, maintenance avancée, sécurité industrielle et optimisation énergétique.</p>
+    </div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+<p style="text-align:center">Email : nguessansavin@gmail.com — Téléphone : +2250708506764</p>
+</section>
+
+<footer>
+<p>© 2025 Portfolio Ingénieur Mécatronique & Robotique — Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
